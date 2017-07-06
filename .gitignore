@@ -1,0 +1,8 @@
+# dependencies
+public/
+
+# system files
+.DS_Store
+
+# ide config
+.idea/*
