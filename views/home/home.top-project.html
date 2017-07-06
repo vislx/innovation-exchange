@@ -1,0 +1,63 @@
+<div style="border-bottom: 1px solid lightgray; padding-bottom: 50px;">
+  <div class="container" style="margin-top: 50px;" ng-controller="HomeCtrl" ng-if="topProject">
+    <div class="row row-padding">
+      <div class="col-md-12">
+        <h5 class="text-primary">This Week's Top Project</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+
+          <!--left-->
+          <div class="col-md-4">
+            <!--title-->
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="card-title">{{topProject.title | limitTo: 20 }}{{topProject.title > 20 ? '...' : ''}}</h4>
+              </div>
+              <div class="col-md-12">
+                <h6 class="card-subtitle mb-2 text-muted">{{topProject.category}}</h6>
+              </div>
+              <div class="col-md-12">
+                <small>by</small> {{topProject.owner}}
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4">
+            <!--description-->
+            <div class="row">
+              <div class="col-md-12">
+                <p class="card-text">{{topProject.description| limitTo: 200 }}{{topProject.description.length > 200 ? '...' : ''}}</p>
+              </div>
+            </div>
+          </div>
+
+          <!--right-->
+          <div class="col-md-4">
+            <!--progress-->
+            <div class="row row-padding">
+              <div class="col-md-12">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: {{(topProject.resources.manpower.manpower_count.funded * 100) / topProject.resources.manpower.manpower_count.total}}%" aria-valuenow="{{topProject.resources.manpower.manpower_count.funded}}" aria-valuemin="0" aria-valuemax="{{topProject.resources.manpower.manpower_count.total}}"></div>
+                </div>
+              </div>
+            </div>
+
+            <!--details-->
+            <div class="row row-padding small">
+              <div class="col-md-6 col-sm-12"><strong>{{topProject.up_vote}}</strong> voted</div>
+              <div class="col-md-6 col-sm-12">{{topProject.status}}</div>
+              <div class="col-md-6 col-sm-12"><strong>{{(topProject.resources.manpower.manpower_count.funded * 100) / topProject.resources.manpower.manpower_count.total | number: 0}}%</strong> staffed</div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

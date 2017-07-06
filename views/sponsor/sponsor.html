@@ -1,0 +1,70 @@
+<div class="container-fluid" style="padding-right: 0; padding-left: 0;">
+  <!--<div class="text-center" style="padding-top: 15vh; padding-bottom: 15vh; background-color: lightgray;">-->
+    <!--something here...-->
+  <!--</div>-->
+  <img src="img/bg32.png" style="width: 100%">
+</div>
+
+<div class="container" style="padding-top: 50px;">
+  <div class="row row-padding">
+    <div class="col-md-12 text-right">
+      <button class="btn btn-outline-primary" ng-click="goBeSponsor()">Be A Sponsor Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="container" ng-if="sponsors">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          <h5>Existing Sponsorship</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="list-group" style="width: 100%">
+            <div class="list-group-item justify-content-between" ng-repeat="sponsor in sponsors" ng-if="sponsor.sponsoring_projects && sponsor.sponsoring_projects.length > 0">
+                <span><strong>{{sponsor.name}}</strong> is sponsoring <strong class="text-primary">{{sponsor.sponsoring_projects[0].title}}</strong>{{sponsor.sponsoring_projects.length > 1 ? ' and ' + (sponsor.sponsoring_projects.length - 1) + ' more projects' : ''}}</span>
+            </div>
+            <a href="#!/sponsors" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="justify-content-between">See more..</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-6">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h5>Sponsors Available</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="list-group" style="width: 100%">
+            <div class="list-group-item justify-content-between" ng-repeat="sponsor in sponsors">
+              <!--ng-if="!sponsor.sponsoring_projects || sponsor.sponsoring_projects.length == 0"-->
+              <div class="row">
+                <div class="col-md-12">
+                  <span><strong>{{sponsor.name}}</strong></span>
+                </div>
+                <div class="col-md-12" ng-if="sponsor.interest_areas && sponsor.interest_areas.length > 0">
+                  <span class="badge badge-default badge-pill" ng-repeat="ia in sponsor.interest_areas" ng-class="ia.class" style="margin-right: 10px;">{{ia.name}}</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#!/sponsors" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="justify-content-between">See more..</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

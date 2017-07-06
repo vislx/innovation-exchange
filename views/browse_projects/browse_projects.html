@@ -1,0 +1,124 @@
+<div class="container-fluid" style="padding-right: 0; padding-left: 0;">
+  <!--<div class="text-center" style="padding-top: 15vh; padding-bottom: 15vh; background-color: lightgray;">-->
+    <!--something here...-->
+  <!--</div>-->
+  <img src="img/bg31.png" style="width: 100%">
+</div>
+<div class="container" style="padding-top: 50px;" ng-if="!category">
+  <div class="row row-padding">
+    <div class="col-md-12">
+      <h5 class="text-primary">All Projects</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-lg-4 col-sm-1" ng-repeat="project in projects | orderBy : 'post_date':true" style="margin-bottom: 30px;">
+
+      <div class="card">
+        <div class="card-block">
+
+          <!--title-->
+          <div class="row">
+            <div class="col-md-12">
+              <a ng-click="goProject(project.id)"><h4 class="card-title">{{project.title | limitTo: 15 }}{{project.title.length > 15 ? '...' : ''}}</h4></a>
+            </div>
+            <div class="col-md-12">
+              <h6 class="card-subtitle mb-2 text-muted">{{project.category}}</h6>
+            </div>
+          </div>
+
+          <!--description-->
+          <div class="row" style="min-height: 80px; max-height: 80px; overflow: hidden; font-size: smaller">
+            <div class="col-md-12">
+              <p class="card-text">{{project.description | limitTo: 100 }}{{project.description.length > 100 ? '...' : ''}}</p>
+            </div>
+          </div>
+
+          <!--owner-->
+          <div class="row">
+            <div class="col-md-12">
+              <small>by</small> {{project.owner}}
+            </div>
+          </div>
+
+          <!--progress-->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: {{(project.resources.manpower.manpower_count.funded * 100) / project.resources.manpower.manpower_count.total}}%" aria-valuenow="{{project.resources.manpower.manpower_count.funded}}" aria-valuemin="0" aria-valuemax="{{project.resources.manpower.manpower_count.total}}"></div>
+              </div>
+            </div>
+          </div>
+
+          <!--details-->
+          <div class="row small">
+            <div class="col-md-6 col-sm-12"><strong>{{project.up_vote}}</strong> voted</div>
+            <div class="col-md-6 col-sm-12">{{project.status}}</div>
+            <div class="col-md-6 col-sm-12"><strong>{{(project.resources.manpower.manpower_count.funded * 100) / project.resources.manpower.manpower_count.total | number: 0}}%</strong> funded</div>
+          </div>
+
+        </div>
+      </div><!--card-->
+
+    </div>
+  </div>
+</div>
+<div class="container" style="padding-top: 50px;" ng-if="category">
+  <div class="row row-padding">
+    <div class="col-md-12">
+      <h5 class="text-primary">Category: {{category}}</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-lg-4 col-sm-1" ng-repeat="project in projects | filter:{category:category} | orderBy : 'post_date':true" style="margin-bottom: 30px;">
+
+      <div class="card">
+        <div class="card-block">
+
+          <!--title-->
+          <div class="row">
+            <div class="col-md-12">
+              <a ng-click="goProject(project.id)"><h4 class="card-title">{{project.title | limitTo: 15 }}{{project.title.length > 15 ? '...' : ''}}</h4></a>
+            </div>
+            <div class="col-md-12">
+              <h6 class="card-subtitle mb-2 text-muted">{{project.category}}</h6>
+            </div>
+          </div>
+
+          <!--description-->
+          <div class="row" style="min-height: 80px; max-height: 80px; overflow: hidden; font-size: smaller">
+            <div class="col-md-12">
+              <p class="card-text">{{project.description | limitTo: 100 }}{{project.description.length > 100 ? '...' : ''}}</p>
+            </div>
+          </div>
+
+          <!--owner-->
+          <div class="row">
+            <div class="col-md-12">
+              <small>by</small> {{project.owner}}
+            </div>
+          </div>
+
+          <!--progress-->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: {{(project.resources.manpower.manpower_count.funded * 100) / project.resources.manpower.manpower_count.total}}%" aria-valuenow="{{project.resources.manpower.manpower_count.funded}}" aria-valuemin="0" aria-valuemax="{{project.resources.manpower.manpower_count.total}}"></div>
+              </div>
+            </div>
+          </div>
+
+          <!--details-->
+          <div class="row small">
+            <div class="col-md-6 col-sm-12"><strong>{{project.up_vote}}</strong> voted</div>
+            <div class="col-md-6 col-sm-12">{{project.status}}</div>
+            <div class="col-md-6 col-sm-12"><strong>{{(project.resources.manpower.manpower_count.funded * 100) / project.resources.manpower.manpower_count.total | number: 0}}%</strong> funded</div>
+          </div>
+
+        </div>
+      </div><!--card-->
+
+    </div>
+  </div>
+</div>

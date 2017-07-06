@@ -1,0 +1,430 @@
+[
+  {
+    "id":0,
+    "title": "Project Apollo",
+    "category": "Automation",
+    "description": "Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "owner": "Glen Ko",
+    "post_date": "2017-06-21",
+    "up_vote": 45,
+    "down_vote": 12,
+    "status": "5w to go",
+    "resources":{
+      "manpower":{
+        "manpower_count":{
+          "total": 17,
+          "need": 13,
+          "funded": 4
+        },
+        "need": [
+          {"name":"Web Developer", "quantity": 2},
+          {"name":"Gaia Expert", "quantity": 1},
+          {"name":"UI Designer", "quantity": 1},
+          {"name":"MariaDB Expert", "quantity": 9}
+        ],
+        "funded": [
+          {"name":"Backend Developer", "quantity": 3},
+          {"name":"Project Manager", "quantity": 1}
+        ]
+      }
+    },
+    "comments":[{
+      "user":"Liu Peng",
+      "content": "This is a very cool project!",
+      "post_date": "2017-06-21 10:12:44"
+    },{
+      "user":"Liu Peng",
+      "content": "Agree that is a really cool project!",
+      "post_date": "2017-06-21 10:15:10"
+    }]
+  },{
+  "id":1,
+  "title": "WhatsUp",
+  "category": "Automating SDLC",
+  "description": "Quick and easy instant messenger that can deal with internal sensitive information. Quick and easy instant messenger that can deal with internal sensitive information. Quick and easy instant messenger that can deal with internal sensitive information.",
+  "owner": "Peng Ho",
+  "post_date": "2017-06-20",
+  "up_vote": 12,
+  "down_vote": 1,
+  "status": "10w to go",
+  "resources":{
+    "manpower":{
+      "manpower_count":{
+        "total": 38,
+        "need": 23,
+        "funded": 15
+      },
+      "need": [
+        {"name":"Web Developer", "quantity": 9},
+        {"name":"Gaia Expert", "quantity": 10},
+        {"name":"UI Designer", "quantity": 1},
+        {"name":"MariaDB Expert", "quantity": 12}
+      ],
+      "funded": [
+        {"name":"Backend Developer", "quantity": 3},
+        {"name":"Project Manager", "quantity": 12}
+      ]
+    }
+  },
+  "comments":[{
+    "user":"Victor",
+    "content": "This is a crazy project!",
+    "post_date": "2017-06-21 09:12:44"
+  },{
+    "user":"Liu Peng",
+    "content": "Disagree! That is a really crazy project!",
+    "post_date": "2017-06-21 10:15:10"
+  }]
+},{
+  "id":2,
+  "title": "Project Intraconnect",
+  "category": "Business Innovation",
+  "description": "A platform for people to interact internally and freely. A platform for people to interact internally and freely. A platform for people to interact internally and freely. A platform for people to interact internally and freely.",
+  "owner": "Shruthi",
+  "post_date": "2017-06-19",
+  "up_vote": 99,
+  "down_vote": 23,
+  "status": "5d to go",
+  "resources":{
+    "manpower":{
+      "manpower_count":{
+        "total": 25,
+        "need": 18,
+        "funded": 7
+      },
+      "need": [
+        {"name":"Web Developer", "quantity": 2},
+        {"name":"Gaia Expert", "quantity": 4},
+        {"name":"UI Designer", "quantity": 1},
+        {"name":"MariaDB Expert", "quantity": 11}
+      ],
+      "funded": [
+        {"name":"Backend Developer", "quantity": 3},
+        {"name":"Project Manager", "quantity": 4}
+      ]
+    }
+  },
+  "comments":[{
+    "user":"Victor",
+    "content": "This is a dumb project!",
+    "post_date": "2017-06-21 09:12:44"
+  },{
+    "user":"Liu Peng",
+    "content": "Agree that is a really dumb project!",
+    "post_date": "2017-06-21 10:15:10"
+  }]
+},{
+  "id":3,
+  "title": "AlarMe",
+  "category": "Cloud",
+  "description": "A high-tech alarm application that alerts user intelligently with the use of AI and machining learning. A high-tech alarm application that alerts user intelligently with the use of AI and machining learning. A high-tech alarm application that alerts user intelligently with the use of AI and machining learning.",
+  "owner": "Victor Sun",
+  "post_date": "2017-06-21",
+  "up_vote": 82,
+  "down_vote": 8,
+  "status": "5mo to go",
+  "resources":{
+    "manpower":{
+      "manpower_count":{
+        "total": 19,
+        "need": 8,
+        "funded": 11
+      },
+      "need": [
+        {"name":"Web Developer", "quantity": 2},
+        {"name":"Gaia Expert", "quantity": 3},
+        {"name":"UI Designer", "quantity": 1},
+        {"name":"MariaDB Expert", "quantity": 2}
+      ],
+      "funded": [
+        {"name":"Backend Developer", "quantity": 3},
+        {"name":"Project Manager", "quantity": 8}
+      ]
+    }
+  },
+  "comments":[{
+    "user":"Victor",
+    "content": "This is a really boring project!",
+    "post_date": "2017-06-21 09:12:44"
+  },{
+    "user":"Liu Peng",
+    "content": "Agree that is a really boring project!",
+    "post_date": "2017-06-21 10:15:10"
+  }]
+},{
+  "id":4,
+  "title": "Project ABC",
+  "category": "Data Science/Big Data",
+  "description": "Smartly arranges meetings and deadline to further streamline of daily workloads. Smartly arranges meetings and deadline to further streamline of daily workloads. Smartly arranges meetings and deadline to further streamline of daily workloads.",
+  "owner": "Liu Peng",
+  "post_date": "2017-06-02",
+  "up_vote": 10,
+  "down_vote": 9,
+  "status": "proposed",
+  "resources":{
+    "manpower":{
+      "manpower_count":{
+        "total": 40,
+        "need": 39,
+        "funded": 1
+      },
+      "need": [
+        {"name":"Web Developer", "quantity": 20},
+        {"name":"Gaia Expert", "quantity": 10},
+        {"name":"UI Designer", "quantity": 0},
+        {"name":"MariaDB Expert", "quantity": 9}
+      ],
+      "funded": [
+        {"name":"Backend Developer", "quantity": 0},
+        {"name":"Project Manager", "quantity": 1}
+      ]
+    }
+  },
+  "comments":[{
+    "user":"Victor",
+    "content": "This is a really carzy project!",
+    "post_date": "2017-06-21 09:12:44"
+  },{
+    "user":"Liu Peng",
+    "content": "Agree that is a really cool project!",
+    "post_date": "2017-06-21 10:15:10"
+  }]
+},{
+  "id":5,
+  "title": "Project Apollo",
+  "category": "Pain Remover",
+  "description": "Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.",
+  "owner": "Aaron Ng",
+  "post_date": "2017-06-11",
+  "up_vote": 1,
+  "down_vote": 14,
+  "status": "1d to go",
+  "resources":{
+    "manpower":{
+      "manpower_count":{
+        "total": 10,
+        "need": 6,
+        "funded": 4
+      },
+      "need": [
+        {"name":"Web Developer", "quantity": 2},
+        {"name":"Gaia Expert", "quantity": 1},
+        {"name":"UI Designer", "quantity": 1},
+        {"name":"MariaDB Expert", "quantity": 2}
+      ],
+      "funded": [
+        {"name":"Backend Developer", "quantity": 3},
+        {"name":"Project Manager", "quantity": 1}
+      ]
+    }
+  },
+  "comments":[{
+    "user":"Victor",
+    "content": "This is a really interesting project!",
+    "post_date": "2017-06-21 09:12:44"
+  },{
+    "user":"Liu Peng",
+    "content": "Agree that is a really interesting project!",
+    "post_date": "2017-06-21 10:15:10"
+  }]
+},
+  {
+    "id":6,
+    "title": "Better world by design",
+    "category": "Pain Remover",
+    "description": "A way to efficiently look for tools within a firm. A way to efficiently look for tools within a firm. There are multiples tools used by multiple people. But there is a problem without finding these tools in times of crisis.",
+    "owner": "Shruthi Shangar",
+    "post_date": "2017-08-19",
+    "up_vote": 20,
+    "down_vote": 5,
+    "status": "5d to go",
+    "resources":{
+      "manpower":{
+        "manpower_count":{
+          "total": 12,
+          "need": 7,
+          "funded": 5
+        },
+        "need": [
+          {"name":"Web Developer", "quantity": 3},
+          {"name":"Gaia Expert", "quantity": 2},
+          {"name":"UI Designer", "quantity": 1},
+          {"name":"MariaDB Expert", "quantity": 1}
+        ],
+        "funded": [
+          {"name":"Backend Developer", "quantity": 2},
+          {"name":"Project Manager", "quantity": 3}
+        ]
+      }
+    },
+    "comments":[{
+      "user":"Victor",
+      "content": "This is a really cool project!",
+      "post_date": "2017-06-21 09:12:44"
+    },{
+      "user":"Liu Peng",
+      "content": "Agree that is a really cool project!",
+      "post_date": "2017-06-21 10:15:10"
+    }]
+  },
+
+  {
+    "id":7,
+    "title": "Safe Childhood",
+    "category": "Monitoring and Support",
+    "description": "Creating a safe environment for children to learn on the internet. The internet was invented and its greatest strength is giving everyone the opportunity to learn. Creating a safe environment for children to learn on the internet. The internet was invented and its greatest strength is giving everyone the opportunity to learn. ",
+    "owner": "Shalv Parker",
+    "post_date": "2017-04-23",
+    "up_vote": 7,
+    "down_vote": 9,
+    "status": "3d to go",
+    "resources":{
+      "manpower":{
+        "manpower_count":{
+          "total": 14,
+          "need": 9,
+          "funded": 5
+        },
+        "need": [
+          {"name":"Web Developer", "quantity": 3},
+          {"name":"Gaia Expert", "quantity": 2},
+          {"name":"UI Designer", "quantity": 1},
+          {"name":"MariaDB Expert", "quantity": 1},
+          {"name": "Software Designer","quantity":2}
+        ],
+        "funded": [
+          {"name":"Backend Developer", "quantity": 1},
+          {"name":"Project Manager", "quantity": 4}
+        ]
+      }
+    },
+    "comments":[{
+      "user":"Victor",
+      "content": "This is a really cool project!",
+      "post_date": "2017-06-21 09:12:44"
+    },{
+      "user":"Liu Peng",
+      "content": "Agree that is a really cool project!",
+      "post_date": "2017-06-21 10:15:10"
+    }]
+  },
+
+  {
+    "id":8,
+    "title": "Speech Enabled Light",
+    "category": "Monitoring and Support ",
+    "description": "Energy saving is an essential in todays time and day. There is humongous waste of energy and there is an absolute necessity to end this. The first step would be to turn off electricity when it’s not being used. ",
+    "owner": "Aastha Chouhan",
+    "post_date": "2017-01-15",
+    "up_vote": 3,
+    "down_vote": 7,
+    "status": "2d to go",
+    "resources":{
+      "manpower":{
+        "manpower_count":{
+          "total": 14,
+          "need": 13,
+          "funded": 1
+        },
+        "need": [
+          {"name":"Web Developer", "quantity": 3},
+          {"name":"Gaia Expert", "quantity": 2},
+          {"name": "Hardware Support", "quantity":3},
+          {"name":"MariaDB Expert", "quantity": 4},
+          {"name": "Software Designer","quantity":1}
+        ],
+        "funded": [
+          {"name":"Project Manager", "quantity": 1}
+        ]
+      }
+    }, "comments":[{
+      "user":"Victor",
+      "content": "This is a really cool project!",
+      "post_date": "2017-06-21 09:12:44"
+    },{
+      "user":"Liu Peng",
+      "content": "Agree that is a really cool project!",
+      "post_date": "2017-06-21 10:15:10"
+    }]
+  },
+
+  {
+    "id":9,
+    "title": "Children Education",
+    "category": "Knowledge Sharing",
+    "description": "A platform to generate interest in science and tech. A platform to generate interest in science and tech.A platform to generate interest in science and tech.A platform to generate interest in science and tech.",
+    "owner": "Daniel Tan",
+    "post_date": "2016-12-23",
+    "up_vote": 8,
+    "down_vote": 4,
+    "status": "2d to go",
+    "resources":{
+      "manpower":{
+        "manpower_count":{
+          "total": 11,
+          "need": 9,
+          "funded": 2
+        },
+        "need": [
+          {"name":"Web Developer", "quantity": 5},
+          {"name":"Gaia Expert", "quantity": 1},
+          {"name":"UI Designer", "quantity": 1},
+          {"name": "Software Designer","quantity":2}
+        ],
+        "funded": [
+          {"name":"Backend Developer", "quantity": 1},
+          {"name":"Project Manager", "quantity": 1}
+        ]
+
+      }
+    }, "comments":[{
+    "user":"Victor",
+    "content": "This is a really cool project!",
+    "post_date": "2017-06-21 09:12:44"
+  },{
+    "user":"Liu Peng",
+    "content": "Agree that is a really cool project!",
+    "post_date": "2017-06-21 10:15:10"
+  }]
+  },
+
+  {
+    "id": 10,
+    "title": "Laptop Cooling Device",
+    "category": "Monitoring Support",
+    "description": "Creating a fan that will lower temperatures and safeguard human life.Creating a fan that will lower temperatures and safeguard human life.Creating a fan that will lower temperatures and safeguard human life.",
+    "owner": "Sarah Miller",
+    "post_date": "2017-2-12",
+    "up_vote": 4,
+    "down_vote": 8,
+    "status": "4d to go",
+    "resources":{
+      "manpower":{
+        "manpower_count":{
+          "total": 10,
+          "need": 8,
+          "funded": 2
+        },
+        "need": [
+          {"name":"Web Developer", "quantity": 3},
+          {"name":"Gaia Expert", "quantity": 2},
+          {"name":"UI Designer", "quantity": 1},
+          {"name": "Software Designer","quantity":2}
+        ],
+        "funded": [
+          {"name":"Backend Developer", "quantity": 1},
+          {"name":"Project Manager", "quantity": 1}
+        ]
+      }
+    },
+    "comments":[{
+      "user":"Victor",
+      "content": "This is a really cool project!",
+      "post_date": "2017-06-21 09:12:44"
+    },{
+      "user":"Liu Peng",
+      "content": "Agree that is a really cool project!",
+      "post_date": "2017-06-21 10:15:10"
+    }]
+  }
+]

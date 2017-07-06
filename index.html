@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <!--[if lt IE 7]>      <html lang="en" ng-app="pcg" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html lang="en" ng-app="pcg" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html lang="en" ng-app="pcg" class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html lang="en" ng-app="pcg" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Innovation Exchange | Share your ideas</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="public/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="public/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="public/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="public/tether/dist/css/tether-theme-arrows.min.css">
+  <link rel="stylesheet" href="public/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="public/bootstrap-table/dist/bootstrap-table.min.css">
+  <link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="app.css">
+
+  <!--<script src="public/requirejs/require.js"></script>-->
+
+  <script src="public/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-include=" 'views/nav/navbar.html' "></div>
+  <div ng-view style="min-height: 100vh;"></div>
+  <div ng-include=" 'views/footer/footer.html' "></div>
+
+
+  <!--assets-->
+  <script src="public/jquery/dist/jquery.min.js"></script>
+  <script src="public/moment/min/moment.min.js"></script>
+  <script src="public/angular/angular.js"></script>
+  <script src="public/angular-route/angular-route.js"></script>
+  <script src="public/angular-local-storage/dist/angular-local-storage.min.js"></script>
+  <script src="public/tether/dist/js/tether.min.js"></script>
+  <script src="public/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="public/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="public/bootstrap-table/dist/bootstrap-table.min.js"></script>
+
+  <!--app-->
+  <script src="app.js"></script>
+
+  <!--view-->
+  <script src="views/nav/navbar.js"></script>
+  <script src="views/home/home.js"></script>
+  <script src="views/browse_projects/browse_projects.js"></script>
+  <script src="views/individual_project/individual_project.js"></script>
+  <script src="views/create_project/create_project.js"></script>
+  <script src="views/sponsor/sponsor.js"></script>
+  <script src="views/be_sponsor/be_sponsor.js"></script>
+
+  <!--service-->
+  <script src="service/project-service.js"></script>
+  <script src="service/sponsor-service.js"></script>
+
+
+</body>
+</html>
