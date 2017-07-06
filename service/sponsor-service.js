@@ -6,7 +6,7 @@ angular.module('pcg.sponsor-service', ['LocalStorageModule'])
   .factory('SponsorService', function ($http, localStorageService) {
     var service = {};
 
-    service.loadInitialSponsors = function(callback){
+    service.loadInitialSponsors = function (callback) {
 
       $http.get('data/sponsors.json').then(function successCallback(response) {
         var sponsors = localStorageService.get("sponsors");
@@ -16,23 +16,24 @@ angular.module('pcg.sponsor-service', ['LocalStorageModule'])
           localStorageService.set("sponsors", sponsors);
         }
         callback(sponsors);
-      }, function errorCallback(response) {});
+      }, function errorCallback(response) {
+      });
 
     };
 
-    service.getSponsors = function(callback){
+    service.getSponsors = function (callback) {
 
-      if (localStorageService.get("sponsors")){
+      if (localStorageService.get("sponsors")) {
         callback(localStorageService.get("sponsors"));
       } else {
-        service.loadInitialSponsors(function(sponsors){
+        service.loadInitialSponsors(function (sponsors) {
           callback(sponsors);
         });
       }
 
     };
 
-    service.beSponsor = function(formData, callback){
+    service.beSponsor = function (formData, callback) {
       var sponsors = localStorageService.get("sponsors");
       if (!sponsors) sponsors = [];
       formData.id = sponsors.length;

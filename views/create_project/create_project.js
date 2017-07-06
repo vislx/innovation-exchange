@@ -5,7 +5,7 @@
 
 angular.module('pcg.create-projects', ['ngRoute', 'pcg.project-service'])
 
-  .config(['$routeProvider', function($routeProvider) {
+  .config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/start', {
       templateUrl: 'views/create_project/create_project.html',
       controller: 'CreateProjectCtrl'
@@ -13,33 +13,32 @@ angular.module('pcg.create-projects', ['ngRoute', 'pcg.project-service'])
   }])
 
   .controller('CreateProjectCtrl', ['$scope', '$rootScope', 'ProjectService'
-    ,function($scope, $rootScope, ProjectService) {
+    , function ($scope, $rootScope, ProjectService) {
 
-      ProjectService.getProjects(function(projects){
+      ProjectService.getProjects(function (projects) {
         $scope.projects = projects;
       });
 
       $scope.createProjectForm = {
-        data:{
-          resources:{
-            manpower:{
-              need:[{name:'', quantity:''}]
+        data: {
+          resources: {
+            manpower: {
+              need: [{name: '', quantity: ''}]
             }
           }
         },
       };
 
-      $scope.createProjectForm.submit = function(){
-        ProjectService.createProject($scope.createProjectForm.data, function(project){
+      $scope.createProjectForm.submit = function () {
+        ProjectService.createProject($scope.createProjectForm.data, function (project) {
           console.log(project);
           $rootScope.goProjectCreate(project.id, true);
         });
       };
 
-      $scope.createProjectForm.addResource = function(){
-        $scope.createProjectForm.data.resources.manpower.need.push({name:'', quantity:''});
+      $scope.createProjectForm.addResource = function () {
+        $scope.createProjectForm.data.resources.manpower.need.push({name: '', quantity: ''});
       };
-
 
 
     }]);

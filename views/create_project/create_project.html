@@ -15,7 +15,8 @@
             <div class="form-group">
               <label>Your Name</label>
               <input type="text" class="form-control" ng-model="createProjectForm.data.owner" required>
-              <small class="form-text text-muted">Please enter your real name so others can find you on PhoneBook.</small>
+              <small class="form-text text-muted">Please enter your real name so others can find you on PhoneBook.
+              </small>
             </div>
 
             <div class="form-group">
@@ -26,7 +27,8 @@
 
             <div class="form-group">
               <label>Your Project Description</label>
-              <textarea class="form-control" style="height: 150px;" ng-model="createProjectForm.data.description" required></textarea>
+              <textarea class="form-control" style="height: 150px;" ng-model="createProjectForm.data.description"
+                        required></textarea>
               <small class="form-text text-muted">No more than 100 words.</small>
             </div>
 
@@ -54,17 +56,21 @@
 
             <div class="form-group">
               <label>Manpower</label>
-              <div class="row" ng-repeat="resource in createProjectForm.data.resources.manpower.need" style="margin-bottom: 10px;">
+              <div class="row" ng-repeat="resource in createProjectForm.data.resources.manpower.need"
+                   style="margin-bottom: 10px;">
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" ng-model="createProjectForm.data.resources.manpower.need[$index].name" required>
+                  <input type="text" class="form-control"
+                         ng-model="createProjectForm.data.resources.manpower.need[$index].name" required>
                 </div>
                 <div class="col-sm-4">
-                  <input type="number" class="form-control" ng-model="createProjectForm.data.resources.manpower.need[$index].quantity" required>
+                  <input type="number" class="form-control"
+                         ng-model="createProjectForm.data.resources.manpower.need[$index].quantity" required>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-8">
-                  <small class="form-text text-muted">Type your resources name (e.g. Developer, Gaia Expert etc.)</small>
+                  <small class="form-text text-muted">Type your resources name (e.g. Developer, Gaia Expert etc.)
+                  </small>
                 </div>
                 <div class="col-sm-4">
                   <small class="form-text text-muted">Quantity needed</small>
@@ -72,7 +78,9 @@
               </div>
               <div class="row">
                 <div class="col-md-12">
-                  <span class="pull-right text-success" ng-click="createProjectForm.addResource()"><i class="fa fa-plus" aria-hidden="true" style="line-height: inherit;"></i> Add More</span>
+                  <span class="pull-right text-success" ng-click="createProjectForm.addResource()"><i class="fa fa-plus"
+                                                                                                      aria-hidden="true"
+                                                                                                      style="line-height: inherit;"></i> Add More</span>
                 </div>
               </div>
             </div>

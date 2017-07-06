@@ -5,6 +5,6 @@
 
 angular.module('pcg.navbar', ['ngRoute'])
 
-    .controller('NavbarCtrl', [function() {
+  .controller('NavbarCtrl', [function () {
 
-    }]);
+  }]);

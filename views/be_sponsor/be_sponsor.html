@@ -15,29 +15,18 @@
             <div class="form-group">
               <label>Your Name</label>
               <input type="text" class="form-control" ng-model="beSponsorForm.data.name" required>
-              <small class="form-text text-muted">Please enter your real name so others can find you on PhoneBook.</small>
+              <small class="form-text text-muted">Please enter your real name so others can find you on PhoneBook.
+              </small>
             </div>
 
             <div class="form-group">
               <label>Select Interest Area</label>
-              <select multiple class="form-control" ng-model="beSponsorForm.data.interest_areas" ng-options="ia.name for ia in beSponsorForm.interest_areas" style="height: 200px;">
-                <!--<option>Artificial Intelligences</option>-->
-                <!--<option>Automating SDLC</option>-->
-                <!--<option>Automation</option>-->
-                <!--<option>Business Innovation</option>-->
-                <!--<option>Cloud</option>-->
-                <!--<option>Data Science/Big Data</option>-->
-                <!--<option>Deployment Tools</option>-->
-                <!--<option>Development Tools</option>-->
-                <!--<option>Environment Management</option>-->
-                <!--<option>Monitoring & Support</option>-->
-                <!--<option>Pain Remover</option>-->
-                <!--<option>Knowledge Sharing</option>-->
-                <!--<option>Solving Business Problem</option>-->
-                <!--<option>Test Tools</option>-->
-                <!--<option>Robotics</option>-->
+              <select multiple class="form-control" ng-model="beSponsorForm.data.interest_areas"
+                      ng-options="ia.name for ia in beSponsorForm.interest_areas" style="height: 200px;">
               </select>
-              <small class="form-text text-muted">Use <strong>ctrl</strong> or <strong>&#8984;</strong> to select multiple interest areas.</small>
+              <small class="form-text text-muted">Use <strong>ctrl</strong> or <strong>&#8984;</strong> to select
+                multiple interest areas.
+              </small>
             </div>
             <!--<div class="row row-padding"></div>-->
             <div class="form-group">

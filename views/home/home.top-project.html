@@ -20,7 +20,8 @@
                 <h6 class="card-subtitle mb-2 text-muted">{{topProject.category}}</h6>
               </div>
               <div class="col-md-12">
-                <small>by</small> {{topProject.owner}}
+                <small>by</small>
+                {{topProject.owner}}
               </div>
             </div>
 
@@ -30,7 +31,8 @@
             <!--description-->
             <div class="row">
               <div class="col-md-12">
-                <p class="card-text">{{topProject.description| limitTo: 200 }}{{topProject.description.length > 200 ? '...' : ''}}</p>
+                <p class="card-text">{{topProject.description| limitTo: 200 }}{{topProject.description.length > 200 ?
+                  '...' : ''}}</p>
               </div>
             </div>
           </div>
@@ -41,7 +43,10 @@
             <div class="row row-padding">
               <div class="col-md-12">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: {{(topProject.resources.manpower.manpower_count.funded * 100) / topProject.resources.manpower.manpower_count.total}}%" aria-valuenow="{{topProject.resources.manpower.manpower_count.funded}}" aria-valuemin="0" aria-valuemax="{{topProject.resources.manpower.manpower_count.total}}"></div>
+                  <div class="progress-bar" role="progressbar"
+                       style="width: {{(topProject.resources.manpower.manpower_count.funded * 100) / topProject.resources.manpower.manpower_count.total}}%"
+                       aria-valuenow="{{topProject.resources.manpower.manpower_count.funded}}" aria-valuemin="0"
+                       aria-valuemax="{{topProject.resources.manpower.manpower_count.total}}"></div>
                 </div>
               </div>
             </div>
@@ -50,7 +55,9 @@
             <div class="row row-padding small">
               <div class="col-md-6 col-sm-12"><strong>{{topProject.up_vote}}</strong> voted</div>
               <div class="col-md-6 col-sm-12">{{topProject.status}}</div>
-              <div class="col-md-6 col-sm-12"><strong>{{(topProject.resources.manpower.manpower_count.funded * 100) / topProject.resources.manpower.manpower_count.total | number: 0}}%</strong> staffed</div>
+              <div class="col-md-6 col-sm-12"><strong>{{(topProject.resources.manpower.manpower_count.funded * 100) /
+                topProject.resources.manpower.manpower_count.total | number: 0}}%</strong> staffed
+              </div>
 
             </div>
 
