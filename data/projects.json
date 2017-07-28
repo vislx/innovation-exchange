@@ -4,7 +4,7 @@
     "title": "Project Apollo",
     "category": "Automation",
     "description": "Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.",
-    "owner": "Glen Ko",
+    "owner": "George Ko",
     "post_date": "2017-06-21",
     "up_vote": 45,
     "down_vote": 12,
@@ -29,11 +29,11 @@
       }
     },
     "comments":[{
-      "user":"Liu Peng",
+      "user":"Peter Liu",
       "content": "This is a very cool project!",
       "post_date": "2017-06-21 10:12:44"
     },{
-      "user":"Liu Peng",
+      "user":"Peter",
       "content": "Agree that is a really cool project!",
       "post_date": "2017-06-21 10:15:10"
     }]
@@ -42,7 +42,7 @@
   "title": "WhatsUp",
   "category": "Automating SDLC",
   "description": "Quick and easy instant messenger that can deal with internal sensitive information. Quick and easy instant messenger that can deal with internal sensitive information. Quick and easy instant messenger that can deal with internal sensitive information.",
-  "owner": "Peng Ho",
+  "owner": "Henry",
   "post_date": "2017-06-20",
   "up_vote": 12,
   "down_vote": 1,
@@ -71,7 +71,7 @@
     "content": "This is a crazy project!",
     "post_date": "2017-06-21 09:12:44"
   },{
-    "user":"Liu Peng",
+    "user":"Peter",
     "content": "Disagree! That is a really crazy project!",
     "post_date": "2017-06-21 10:15:10"
   }]
@@ -80,7 +80,7 @@
   "title": "Project Intraconnect",
   "category": "Business Innovation",
   "description": "A platform for people to interact internally and freely. A platform for people to interact internally and freely. A platform for people to interact internally and freely. A platform for people to interact internally and freely.",
-  "owner": "Shruthi",
+  "owner": "Cherry",
   "post_date": "2017-06-19",
   "up_vote": 99,
   "down_vote": 23,
@@ -109,7 +109,7 @@
     "content": "This is a dumb project!",
     "post_date": "2017-06-21 09:12:44"
   },{
-    "user":"Liu Peng",
+    "user":"Peter",
     "content": "Agree that is a really dumb project!",
     "post_date": "2017-06-21 10:15:10"
   }]
@@ -118,7 +118,7 @@
   "title": "AlarMe",
   "category": "Cloud",
   "description": "A high-tech alarm application that alerts user intelligently with the use of AI and machining learning. A high-tech alarm application that alerts user intelligently with the use of AI and machining learning. A high-tech alarm application that alerts user intelligently with the use of AI and machining learning.",
-  "owner": "Victor Sun",
+  "owner": "Victor",
   "post_date": "2017-06-21",
   "up_vote": 82,
   "down_vote": 8,
@@ -147,7 +147,7 @@
     "content": "This is a really boring project!",
     "post_date": "2017-06-21 09:12:44"
   },{
-    "user":"Liu Peng",
+    "user":"Peter",
     "content": "Agree that is a really boring project!",
     "post_date": "2017-06-21 10:15:10"
   }]
@@ -156,7 +156,7 @@
   "title": "Project ABC",
   "category": "Data Science/Big Data",
   "description": "Smartly arranges meetings and deadline to further streamline of daily workloads. Smartly arranges meetings and deadline to further streamline of daily workloads. Smartly arranges meetings and deadline to further streamline of daily workloads.",
-  "owner": "Liu Peng",
+  "owner": "Peter",
   "post_date": "2017-06-02",
   "up_vote": 10,
   "down_vote": 9,
@@ -185,7 +185,7 @@
     "content": "This is a really carzy project!",
     "post_date": "2017-06-21 09:12:44"
   },{
-    "user":"Liu Peng",
+    "user":"Peter",
     "content": "Agree that is a really cool project!",
     "post_date": "2017-06-21 10:15:10"
   }]
@@ -223,7 +223,7 @@
     "content": "This is a really interesting project!",
     "post_date": "2017-06-21 09:12:44"
   },{
-    "user":"Liu Peng",
+    "user":"Peter",
     "content": "Agree that is a really interesting project!",
     "post_date": "2017-06-21 10:15:10"
   }]
@@ -233,7 +233,7 @@
     "title": "Better world by design",
     "category": "Pain Remover",
     "description": "A way to efficiently look for tools within a firm. A way to efficiently look for tools within a firm. There are multiples tools used by multiple people. But there is a problem without finding these tools in times of crisis.",
-    "owner": "Shruthi Shangar",
+    "owner": "Cherry Shangar",
     "post_date": "2017-08-19",
     "up_vote": 20,
     "down_vote": 5,
@@ -262,7 +262,7 @@
       "content": "This is a really cool project!",
       "post_date": "2017-06-21 09:12:44"
     },{
-      "user":"Liu Peng",
+      "user":"Peter",
       "content": "Agree that is a really cool project!",
       "post_date": "2017-06-21 10:15:10"
     }]
@@ -303,7 +303,7 @@
       "content": "This is a really cool project!",
       "post_date": "2017-06-21 09:12:44"
     },{
-      "user":"Liu Peng",
+      "user":"Peter",
       "content": "Agree that is a really cool project!",
       "post_date": "2017-06-21 10:15:10"
     }]
@@ -342,7 +342,7 @@
       "content": "This is a really cool project!",
       "post_date": "2017-06-21 09:12:44"
     },{
-      "user":"Liu Peng",
+      "user":"Peter",
       "content": "Agree that is a really cool project!",
       "post_date": "2017-06-21 10:15:10"
     }]
@@ -382,7 +382,7 @@
     "content": "This is a really cool project!",
     "post_date": "2017-06-21 09:12:44"
   },{
-    "user":"Liu Peng",
+    "user":"Peter",
     "content": "Agree that is a really cool project!",
     "post_date": "2017-06-21 10:15:10"
   }]
@@ -422,7 +422,7 @@
       "content": "This is a really cool project!",
       "post_date": "2017-06-21 09:12:44"
     },{
-      "user":"Liu Peng",
+      "user":"Peter",
       "content": "Agree that is a really cool project!",
       "post_date": "2017-06-21 10:15:10"
     }]

@@ -1,7 +1,7 @@
 [
   {
     "id":2,
-    "name": "Liu Peng",
+    "name": "Peter",
     "interest_areas": [{"name":"Business Innovation", "class":"badge-primary"}],
     "sponsoring_projects":
     [
@@ -10,7 +10,7 @@
   },
   {
     "id":3,
-    "name": "Peng Ho",
+    "name": "Henry",
     "interest_areas": [{"name": "Pain Remover", "class":"badge-success"}, {"name": "Data Science/Big Data", "class": "badge-default"}],
     "sponsoring_projects":
     [
@@ -18,7 +18,7 @@
   },
   {
     "id":4,
-    "name": "Shruthi",
+    "name": "James",
     "interest_areas": [{"name": "Pain Remover", "class": "badge-success"}],
     "sponsoring_projects":
     [
@@ -33,7 +33,7 @@
   },
   {
     "id":6,
-    "name": "Lixin",
+    "name": "Adrain",
     "interest_areas": [{"name": "Pain Remover", "class":"badge-success"}],
     "sponsoring_projects":
     [
@@ -41,7 +41,7 @@
     ]  },
   {
     "id":7,
-    "name": "Victor",
+    "name": "Jimmy",
     "interest_areas": [{"name": "Pain Remover", "class":"badge-success"}, {"name":"Monitoring and Support", "class":"badge-info"}],
     "sponsoring_projects":
     [
